@@ -6,6 +6,7 @@ public class Cliente {
   private String dni;
   private String numeroTarjeta;
   private String pin;
+  private int puntosPorVentaAcumlados = 0;
 
   public Cliente(String nombre, String apellido, String dni, String numeroTarjeta, String pin) {
     this.nombre = nombre;
@@ -45,6 +46,10 @@ public class Cliente {
 
   public String getNombreCompleto() {
     return nombre + " " + apellido;
+  }
+  
+  public void aumentarPuntosPorVenta(int puntosPorVenta) {
+    puntosPorVentaAcumlados += puntosPorVenta;
   }
 
 }

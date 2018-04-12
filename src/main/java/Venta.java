@@ -15,4 +15,8 @@ public class Venta {
     medioDePago.cobrar(cliente, monto);
   }
 
+  public int getPuntosPorVenta() {
+    return (int) (monto / 1000);
+  }
+
 }
