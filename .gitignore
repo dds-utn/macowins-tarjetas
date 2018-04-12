@@ -86,4 +86,7 @@ hs_err_pid*
 
 target
 
+.idea
+macowins-tarjetas.iml
+
 # End of https://www.gitignore.io/api/java,eclipse
