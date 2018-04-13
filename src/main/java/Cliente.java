@@ -6,14 +6,18 @@ public class Cliente {
   private String dni;
   private String numeroTarjeta;
   private String pin;
+  private String mail;
+  private String celular;
   private int puntosPorVentaAcumlados = 0;
 
-  public Cliente(String nombre, String apellido, String dni, String numeroTarjeta, String pin) {
+  public Cliente(String nombre, String apellido, String dni, String numeroTarjeta, String pin, String mail, String celular) {
     this.nombre = nombre;
     this.apellido = apellido;
     this.dni = dni;
     this.numeroTarjeta = numeroTarjeta;
     this.pin = pin;
+    this.mail = mail;
+    this.celular = celular;
   }
 
   public String getNombre() {
@@ -47,7 +51,15 @@ public class Cliente {
   public String getNombreCompleto() {
     return nombre + " " + apellido;
   }
-  
+
+  public String getMail() {
+    return mail;
+  }
+
+  public String getCelular() {
+    return celular;
+  }
+
   public void aumentarPuntosPorVenta(int puntosPorVenta) {
     puntosPorVentaAcumlados += puntosPorVenta;
   }
