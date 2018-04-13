@@ -64,4 +64,8 @@ public class Cliente {
     puntosPorVentaAcumlados += puntosPorVenta;
   }
 
+  public int getPuntosPorVentaAcumlados() {
+    return puntosPorVentaAcumlados;
+  }
+
 }
